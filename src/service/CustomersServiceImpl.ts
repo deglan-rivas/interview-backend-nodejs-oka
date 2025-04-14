@@ -10,7 +10,7 @@ export class CustomersServiceImpl implements CustomersService {
       (item) =>
         new Customer({
           ...item,
-          email: `${item.name.charAt(0)}${item.lastName}@ihfintech.com.pe`,
+          email: `${item.name!.charAt(0)}${item.lastName!}@ihfintech.com.pe`,
         })
     );
   }
